@@ -1,0 +1,5 @@
+check process event_collector
+  with pidfile /var/vcap/sys/run/event_collector/pid
+  start program "/var/vcap/jobs/event_collector/bin/ctl start"
+  stop program "/var/vcap/jobs/event_collector/bin/ctl stop"
+  group vcap
