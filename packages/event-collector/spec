@@ -1,0 +1,8 @@
+---
+name: event-collector
+
+dependencies:
+- golang-1.10-linux
+
+files:
+- github.com/**/*

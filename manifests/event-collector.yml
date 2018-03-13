@@ -1,0 +1,26 @@
+---
+name: event-collector
+releases:
+- name: event-collector
+  version: latest
+stemcells:
+- alias: default
+  os: ubuntu-trusty
+  version: 3468.21
+update:
+  canaries: 1
+  max_in_flight: 10
+  canary_watch_time: 1000-30000
+  update_watch_time: 1000-30000
+instance_groups:
+- name: event-collector
+  azs: [europe-west1-b]
+  instances: 1
+  jobs:
+  - name: event_collector
+    release: event-collector
+  vm_type: micro
+  stemcell: default
+  networks:
+  - name: lima-services-subnet
+

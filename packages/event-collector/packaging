@@ -1,0 +1,5 @@
+set -e -x
+
+source /var/vcap/packages/golang-1.10-linux/bosh/compile.env
+ls -alh
+go build -o ${BOSH_INSTALL_TARGET}/event-collector github.com/pivotal-cf/event-collector/main.go

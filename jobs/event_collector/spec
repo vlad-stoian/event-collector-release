@@ -4,6 +4,7 @@ name: event_collector
 templates:
   ctl.erb: bin/ctl
 
-packages: []
+packages:
+- event-collector
 
 properties: {}
