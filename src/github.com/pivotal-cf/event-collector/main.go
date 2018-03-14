@@ -2,14 +2,20 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"time"
 )
 
 func main() {
 
+	pksTileVersion := os.Getenv("PKS_TILE_VERSION")
+	aggregatorEndpoint := os.Getenv("AGGREGATOR_ENDPOINT")
+
+	fmt.Println("PKS Tile Version: ", pksTileVersion)
+	fmt.Println("Aggregator Endpoint: ", aggregatorEndpoint)
+
 	for {
-		fmt.Println("vim-go")
-		time.Sleep(1000 * time.Millisecond)
+		time.Sleep(10 * time.Second)
 	}
 
 }

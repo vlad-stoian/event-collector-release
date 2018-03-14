@@ -23,4 +23,7 @@ instance_groups:
   stemcell: default
   networks:
   - name: lima-services-subnet
+properties:
+  pks_tile_version: 1.2.3
+  aggregator_endpoint: http://foo.bar
 

@@ -4,6 +4,11 @@ RUN_DIR=/var/vcap/sys/run/event_collector
 LOG_DIR=/var/vcap/sys/log/event_collector
 PIDFILE=${RUN_DIR}/pid
 
+PKS_TILE_VERSION=<%= p("pks_tile_version") %>
+export PKS_TILE_VERSION
+AGGREGATOR_ENDPOINT=<%= p("aggregator_endpoint") %>
+export AGGREGATOR_ENDPOINT
+
 case $1 in
 
   start)
