@@ -1,0 +1,21 @@
+name: event-collector
+version: 0.1.0
+commit_hash: 4eea656
+uncommitted_changes: false
+jobs:
+- name: event_collector
+  version: eefec72e9c2286bae67544f81412012ea6323183
+  fingerprint: eefec72e9c2286bae67544f81412012ea6323183
+  sha1: 89eb4a5516d67ff6ccc1ca145abe9405bde29ebf
+packages:
+- name: event-collector
+  version: a40097ce9acafe2eed36c032f0ba689c407ee40d
+  fingerprint: a40097ce9acafe2eed36c032f0ba689c407ee40d
+  sha1: 983a484ddbbb231d317667e5d527e1fa41d52ca1
+  dependencies:
+  - golang-1.10-linux
+- name: golang-1.10-linux
+  version: 48c842421b6f05acf88dc6ec17f7574dade28a86
+  fingerprint: 48c842421b6f05acf88dc6ec17f7574dade28a86
+  sha1: e9a18aebf2c407ce17423c22c913b6612cf4b75f
+  dependencies: []
